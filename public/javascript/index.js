@@ -24,7 +24,7 @@ $(document).ready(function() {
       overlay.show();
       overlay.animate({ "left": "0px" });
       page.animate({ "left": "-100vw"}, function() {
-        window.location.href = "http://startups.hellovelocity.com";
+        window.location.href = "http://design.hellovelocity.com";
       });
       
     }
