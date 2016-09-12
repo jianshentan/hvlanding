@@ -1,0 +1,100 @@
+body {
+  overflow-y: none;
+  overflow-x: hidden;
+}
+.h1, .h2, .h3, .h4 {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px !important;
+  font-weight: 700;
+}
+.inline-block {
+  display: inline-block;
+}
+.hv-page {
+  cursor: url(../images/cursor.png), auto;
+  position: fixed;
+}
+.hv-half-page {
+  width: 49vw;
+  height: 100vh;
+  position: relative;
+  line-height: 2.4em;
+}
+.hv-content-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 400px;
+}
+.hv-box {
+  border: 4px solid blue;  
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: blue;
+}
+.hv-box .glyphicon {
+  top: -3px;
+}
+.hv-box-text {
+  color: blue;
+  margin-left:12px;
+  vertical-align:top;
+  line-height:50px;
+}
+.hv-cursor {
+  width: 1px;
+  height: 1px;
+  background-color: blue;
+  /*z-index: 1000;*/
+}
+.hv-cursor-arrows,
+.hv-cursor-text {
+  width: 160px;
+  text-align: center;
+}
+.hv-cursor-arrow,
+.hv-cursor-arrow-space {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #555;
+  margin: 4px 2px;
+  vertical-align: top;
+  line-height: 36px;
+  text-align: center;
+  border: 4px solid #555;
+}
+.hv-cursor-arrow-space {
+  opacity: 0;
+}
+.hv-overlay {
+  z-index: 1001;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  display: none;
+  border-right: 4px solid blue;
+  overflow-x: hidden;
+}
+.hv-overlay.blue {
+  background-color: blue;
+}
+.hv-overlay.white {
+  background-color: white; 
+}
+
+
+
+
+
+
+
+
+
+
+
