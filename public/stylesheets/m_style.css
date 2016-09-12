@@ -7,7 +7,7 @@
 .hv-half-page {
   width: 100vw;
   height: 50vh;
-  border: 3px solid blue;
+  border: 6px solid blue;
 }
 .hv-half-page-top {
   border-bottom: 0px;  
@@ -21,7 +21,7 @@
 .hv-box {
   width: 10vw;
   height: 10vw;
-  border: 3px solid blue;
+  border: 5px solid blue;
   line-height: 11vw;
 }
 .hv-box-text {
