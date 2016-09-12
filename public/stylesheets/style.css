@@ -78,7 +78,7 @@ body {
   top: 0px;
   left: 0px;
   display: none;
-  border-right: 4px solid blue;
+  border-left: 4px solid blue;
   overflow-x: hidden;
 }
 .hv-overlay.blue {
