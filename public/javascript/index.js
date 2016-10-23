@@ -5,11 +5,12 @@ $(document).ready(function() {
     $(".hv-cursor").offset({ top: event.pageY - 40, left: event.pageX - 80});
   });
   
+  var overlay = $(".hv-overlay");
+  var page = $(".hv-page");
+  
+  // arrow keys
   $('body').keydown(function(e) {
-    var overlay = $(".hv-overlay");
-    var page = $(".hv-page");
     if(e.keyCode == 37) { // left
-    
       overlay.addClass('blue');
       overlay.css("left", "-100vw");
       overlay.show();
@@ -24,9 +25,7 @@ $(document).ready(function() {
         eventAction: 'slide left (LAB)',
         eventLabel: 'HV Lab'
       });
-      
     } else if(e.keyCode == 39) { // right
-      
       overlay.addClass('white');
       overlay.css("left", "100vw");
       overlay.show();
@@ -40,8 +39,29 @@ $(document).ready(function() {
         eventCategory: 'slide',
         eventAction: 'slide right (DESIGN)',
         eventLabel: 'HV DESIGN'
-      });     
-      
+      });
     }
   });
+  
+  // clicked on links
+  $("#lab-link").click(function() {
+    window.location.href = "http://lab.hellovelocity.com";
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'click',
+      eventAction: 'slide left (LAB)',
+      eventLabel: 'HV Lab'
+    });
+  });
+  
+  $("#design-link").click(function() {
+    window.location.href = "http://design.hellovelocity.com";
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'click',
+      eventAction: 'slide right (DESIGN)',
+      eventLabel: 'HV DESIGN'
+    });
+  });
+  
 });
